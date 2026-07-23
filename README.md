@@ -22,7 +22,3 @@ After installing, open the extension's options in PopClip preferences and set:
 
 - macOS with [PopClip](https://pilotmoon.com/popclip/) installed
 - A Karakeep instance with API access
-
-## Contributors
-
-- [Alan Huang](https://github.com/acchuang)
