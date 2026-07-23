@@ -1,0 +1,39 @@
+{
+  "name": "Karakeep",
+  "identifier": "app.karakeep.popclip",
+  "description": "Save selected URL to Karakeep",
+  "link": "https://github.com/acchuang/karakeep-popclipext",
+  "popclip version": 4151,
+  "entitlements": ["network"],
+  "icon": "symbol:bookmark.fill",
+  "options": [
+    {
+      "identifier": "instanceUrl",
+      "label": "Instance URL",
+      "type": "string",
+      "description": "e.g. https://karakeep.example.com"
+    },
+    {
+      "identifier": "apiKey",
+      "label": "API Key",
+      "type": "secret",
+      "description": "From Karakeep → Settings → API Keys"
+    }
+  ],
+  "actions": [
+    {
+      "title": "Save to Karakeep",
+      "icon": "symbol:bookmark.fill",
+      "requirements": ["url"],
+      "after": "show-result",
+      "javascript file": "Extension.js"
+    },
+    {
+      "title": "Test Karakeep Connection",
+      "icon": "symbol:checkmark.seal",
+      "requirements": ["url"],
+      "after": "show-result",
+      "javascript file": "TestConnection.js"
+    }
+  ]
+}
